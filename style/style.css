@@ -47,6 +47,7 @@ body {
     align-items: center;
     border-radius: 7px;
     transition-duration: 300ms;
+    margin-right: 15px;
 }
 
 .button:hover {
@@ -71,4 +72,64 @@ body {
 .logo-wrapper {
     display: flex;
     align-items: center;
+}
+
+.image {
+    width: 200px;
+}
+
+.top-wrapper {
+    border: 1px solid transparent;
+    width: 355px 439px;
+    box-sizing: border-box;
+}
+
+.top-wrapper:hover {
+    background-color: transparent;
+}
+
+.line {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+fieldset {
+    display: flex;
+}
+
+.button--search {
+    background-color: #3F3D56;
+    border: 1px solid #3F3D56;
+    color: #ffffff;
+    width: 375px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    transition-duration: 300ms;
+    margin-right: 19px;
+    text-align: left;
+}
+
+.vendas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product {
+    margin-right: 57px;
+    display: block;
+}
+
+.name-and-value {
+    color: #BFBFBF;
+    font-size: 20px;
+    display: flex;
+}
+
+.option {
+    display: flex;
 }
