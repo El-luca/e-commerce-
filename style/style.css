@@ -31,9 +31,10 @@ body {
 
 .header {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    padding: 22px 15px 0 15px;
     justify-content: space-between;
-    padding: 0 15px;
+    margin-bottom: 43px;
 }
 
 .button {
@@ -49,6 +50,12 @@ body {
     border-radius: 7px;
     transition-duration: 300ms;
     margin-right: 15px;
+}
+
+.container-top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .button:hover {
@@ -68,6 +75,7 @@ body {
 
 .button-header-wrapper {
     display: flex;
+    background-color: transparent;
 }
 
 .logo-wrapper {
@@ -79,7 +87,7 @@ body {
     width: 200px;
 }
 
-.top-wrapper {
+.product {
     border: 1px solid transparent;
     width: 355px 439px;
     box-sizing: border-box;
@@ -95,13 +103,17 @@ body {
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-left: 59px;
 }
 
-fieldset {
+
+/* fieldset { 
     display: flex;
-}
+}*/
 
-.button--search {
+
+/* .button--search {
     background-color: #3F3D56;
     border: 1px solid #3F3D56;
     color: #ffffff;
@@ -115,26 +127,83 @@ fieldset {
     transition-duration: 300ms;
     margin-right: 19px;
     text-align: left;
-}
+} */
 
-.vendas {
+.product-list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     width: fit-content;
 }
 
 .product {
-    margin-right: 57px;
-    display: block;
+    width: fit-content;
+    padding: 26px 19px;
+    border-radius: 16px;
 }
 
-.name-and-value {
+.product-wrapper {
+    background-color: #BFBFBF2E;
+}
+
+.product-wrapper:hover {
+    background-color: rgb(185, 181, 255, 0.18);
+    transition-duration: 300ms;
+}
+
+.name {
     color: #BFBFBF;
     font-size: 20px;
-    display: flex;
+}
+
+.value {
+    color: #BFBFBF;
+    font-size: 20px;
+    margin-bottom: 29px;
 }
 
 .option {
     display: flex;
+    justify-content: space-around;
+}
+
+.store {
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.button--small {
+    font-size: 14px;
+    height: 50px;
+}
+
+.field {
+    height: 50px;
+    width: 375px;
+    background-color: #3F3D56;
+    border: 1px solid #3F3D56;
+    border-radius: 7px;
+    padding-left: 22px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #ffffff;
+    outline: none;
+    transition-duration: 300ms;
+}
+
+.field::placeholder {
+    color: #8D8BA4;
+}
+
+.field:focus {
+    border: 1px solid #6C63FF;
+}
+
+.button-box {
+    display: flex;
+}
+
+.field--search {
+    margin-right: 19px;
+    align-items: center;
 }
